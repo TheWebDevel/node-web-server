@@ -21,12 +21,12 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use((req, res, next) => {
-    res.render('maintanence.hbs', {
-        pageTitle : 'The site is under maintanence',
-        welcomeMessage : 'We\'ll get back soon!'
-    })
-});
+// app.use((req, res, next) => {
+//     res.render('maintanence.hbs', {
+//         pageTitle : 'The site is under maintanence',
+//         welcomeMessage : 'We\'ll get back soon!'
+//     })
+// });
 
 hbs.registerHelper('getCurrentYear', () => {
     return new Date().getFullYear();
